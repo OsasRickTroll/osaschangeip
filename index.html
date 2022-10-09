@@ -1,0 +1,34 @@
+<html>
+    <head>  
+        <title>Gabry Metod</title>
+        <style>
+        p, h1 {
+            color: rgb(180, 27, 27);
+        }
+        p, h2 {
+            color: rgb(12, 12, 12);
+        }
+        </style>
+      
+        <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+          <script>
+        $.getJSON("https://api.ipify.org?format=json", function(data) {
+            $("#gfg").html(data.ip);
+        })
+        alert("Sto caricando il sito...")
+        </script>    
+        <meta charset="utf-8">  
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+            <h1>GabryMetod</h1>
+            <h3>Il tuo IP è:</h3>
+            <h2><p id="gfg"></p></h1>
+            <p><a href="ricktroll.html" class="btn">Cambia IP ORA!</a></p>
+        </center>
+    </body>
+    </body>
+</html>
